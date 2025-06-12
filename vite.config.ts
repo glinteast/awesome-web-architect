@@ -24,7 +24,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   define: {
-    __WS_TOKEN__: JSON.stringify((process.env.WS_TOKEN || '').replace(/[^\w]/g, '')),
+    __WS_TOKEN__: JSON.stringify(""),
   },
   envPrefix: ['VITE_'],
 }));
