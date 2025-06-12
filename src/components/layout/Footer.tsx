@@ -16,7 +16,7 @@ export function Footer() {
               Corlate
             </span>
           </Link>
-          <p className="text-muted-foreground text-sm max-w-xs">
+          <p className="text-white/80 text-sm max-w-xs">
             We deliver innovative digital marketing and web development solutions tailored to your business needs.
           </p>
           <div className="flex space-x-4 pt-2">
@@ -29,7 +29,7 @@ export function Footer() {
         
         {/* Quick Links */}
         <div>
-          <h3 className="text-base font-medium mb-4 text-color:white">Quick Links</h3>
+          <h3 className="text-base font-medium mb-4 text-white">Quick Links</h3>
           <ul className="space-y-3">
             <FooterLink href="/">Home</FooterLink>
             <FooterLink href="/services">Services</FooterLink>
@@ -41,7 +41,7 @@ export function Footer() {
         
         {/* Services */}
         <div>
-          <h3 className="text-base font-medium mb-4">Services</h3>
+          <h3 className="text-base font-medium mb-4 text-white">Services</h3>
           <ul className="space-y-3">
             <FooterLink href="/services/digital-marketing">Digital Marketing</FooterLink>
             <FooterLink href="/services/web-development">Web Development</FooterLink>
@@ -53,23 +53,23 @@ export function Footer() {
         
         {/* Contact Info */}
         <div>
-          <h3 className="text-base font-medium mb-4">Contact Us</h3>
+          <h3 className="text-base font-medium mb-4 text-white">Contact Us</h3>
           <ul className="space-y-3">
             <li className="flex items-start">
               <MapPin className="h-5 w-5 text-primary mr-3 shrink-0 mt-0.5" />
-              <span className="text-sm text-muted-foreground">
+              <span className="text-sm text-white/80">
                 35 Popular Road, Primrose, Germiston
               </span>
             </li>
             <li className="flex items-center">
               <Phone className="h-5 w-5 text-primary mr-3 shrink-0" />
-              <a href="tel:+15551234567" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <a href="tel:+15551234567" className="text-sm text-white/80 hover:text-white transition-colors">
                 +27 (696) 030-501
               </a>
             </li>
             <li className="flex items-center">
               <Mail className="h-5 w-5 text-primary mr-3 shrink-0" />
-              <a href="mailto:info@corlate.com" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <a href="mailto:info@corlate.com" className="text-sm text-white/80 hover:text-white transition-colors">
                 info@corlate.co.za
               </a>
             </li>
@@ -77,18 +77,18 @@ export function Footer() {
         </div>
       </div>
       
-      <div className="max-w-7xl mx-auto mt-16 pt-6 border-t border-gray-200/50 flex flex-col md:flex-row justify-between items-center">
-        <p className="text-sm text-muted-foreground">
+      <div className="max-w-7xl mx-auto mt-16 pt-6 border-t border-white/20 flex flex-col md:flex-row justify-between items-center">
+        <p className="text-sm text-white/70">
           © {currentYear} Corlate. All rights reserved.
         </p>
         <div className="flex space-x-6 mt-4 md:mt-0">
-          <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
+          <a href="#" className="text-xs text-white/70 hover:text-white transition-colors">
             Privacy Policy
           </a>
-          <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
+          <a href="#" className="text-xs text-white/70 hover:text-white transition-colors">
             Terms of Service
           </a>
-          <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
+          <a href="#" className="text-xs text-white/70 hover:text-white transition-colors">
             Cookie Policy
           </a>
         </div>
@@ -103,7 +103,7 @@ function SocialLink({ href, icon }: { href: string; icon: React.ReactNode }) {
       href={href} 
       target="_blank" 
       rel="noreferrer" 
-      className="h-8 w-8 flex items-center justify-center rounded-full bg-foreground/5 text-muted-foreground hover:bg-primary hover:text-white transition-colors"
+      className="h-8 w-8 flex items-center justify-center rounded-full bg-white/10 text-white/80 hover:bg-primary hover:text-white transition-colors"
     >
       {icon}
     </a>
@@ -115,7 +115,7 @@ function FooterLink({ href, children }: { href: string; children: React.ReactNod
     <li>
       <Link 
         to={href}
-        className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+        className="text-sm text-white/80 hover:text-white transition-colors"
       >
         {children}
       </Link>

@@ -48,7 +48,7 @@ const Contact = () => {
       <Navbar />
       <main>
         {/* Hero Section */}
-        <section className="py-20 px-6 md:px-10 bg-secondary/95">
+        <section className="py-20 px-6 md:px-10 bg-secondary">
           <div className="max-w-7xl mx-auto">
             <SectionTitle 
               eyebrow="Contact Us" 
