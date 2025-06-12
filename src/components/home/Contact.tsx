@@ -1,3 +1,4 @@
+
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
 import { FormEvent, useState, useRef } from "react";
@@ -54,7 +55,7 @@ export function Contact() {
           description="Contact us today for a free consultation and let us help you achieve your digital goals."
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-16 items-start">
           <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
             {isSubmitted ? (
               <div className="h-full flex flex-col items-center justify-center text-center">
@@ -183,14 +184,43 @@ export function Contact() {
             )}
           </div>
 
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col justify-start h-full">
             <div>
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
-              {/* Contact Information */}
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <Phone className="h-5 w-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-medium">Phone</p>
+                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <Mail className="h-5 w-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-medium">Email</p>
+                    <p className="text-muted-foreground">hello@corlate.com</p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <MapPin className="h-5 w-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-medium">Address</p>
+                    <p className="text-muted-foreground">123 Business St, Suite 100<br />New York, NY 10001</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="mt-12 relative rounded-xl overflow-hidden h-[300px]">
               <iframe
-                className="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425878459418!3d40.74844097932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sGoogle!5e0!3m2!1sen!2sus!4v1647043840645!5m2!1sen!2sus"
+                className="w-full h-full border-0"
                 allowFullScreen
                 loading="lazy"
                 title="Office location map"
